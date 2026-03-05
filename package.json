@@ -1,0 +1,32 @@
+{
+  "name": "safe-beat",
+  "version": "1.0.0",
+  "description": "Red Alert stress-relief Telegram bot",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.8.1",
+    "grammy": "^1.41.1",
+    "ioredis": "^5.10.0",
+    "p-limit": "^4.0.0",
+    "p-retry": "^4.6.2",
+    "winston": "^3.19.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

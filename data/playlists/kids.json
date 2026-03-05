@@ -1,0 +1,20 @@
+[
+  {
+    "id": "kids-1",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=94BIxqTYJzU&list=RD94BIxqTYJzU&start_radio=1",
+    "title": "שירי ילדים מרגיעים"
+  },
+  {
+    "id": "kids-2",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=rANiul86eSU&list=RDrANiul86eSU&start_radio=1",
+    "title": "סיפורי ילדים"
+  },
+  {
+    "id": "kids-3",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/episode/2yfSOZrn6zcUeatdLpO51l?si=6687085c32d843c5",
+    "title": "מוזיקת ילדים"
+  }
+]
