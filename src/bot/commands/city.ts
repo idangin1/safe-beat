@@ -1,5 +1,6 @@
 import { CommandContext, Context } from 'grammy';
 import { IUserStore } from '../../user-store/store.interface';
+import {logger} from "../../logger";
 
 const cities: string[] = require('../../../data/cities.json') as string[];
 const citySet = new Set(cities.map((c) => c.toLowerCase().trim()));
@@ -14,13 +15,20 @@ export function registerCityCommand(
 
     const input = ctx.match?.trim().toLowerCase();
     if (!input) {
-      await ctx.reply('📍 שלחו: /city &lt;שם עיר&gt;\nדוגמה: /city tel aviv', { parse_mode: 'HTML' });
+      await ctx.reply('📍 שלחו: /city &lt;שם עיר&gt;\nדוגמה: /city תל אביב', { parse_mode: 'HTML' });
       return;
     }
 
     if (!citySet.has(input)) {
+      let reply = `❌ האזור "<b>${input}</b>" לא נמצא ברשימה.\nנסו שם אחר.`
+      const similarCities = cities.filter(city => city.includes(input))
+      logger.info('found similar cities', similarCities);
+      if (similarCities.length > 0) {
+        reply += '\nייתכן והתכוונתם לאחד מהבאים: ' + similarCities.join(', ') + '?';
+        logger.info(reply);
+      }
       await ctx.reply(
-        `❌ העיר "<b>${input}</b>" לא נמצאה ברשימה.\nנסו שם אחר.`,
+        reply,
         { parse_mode: 'HTML' },
       );
       return;
@@ -42,6 +50,6 @@ export function registerCityCommand(
     await store.saveUser(existing);
     await store.addUserToCity(from.id, input);
 
-    await ctx.reply(`✅ העיר שלך עודכנה ל: <b>${input}</b>`, { parse_mode: 'HTML' });
+    await ctx.reply(`✅ האזור שלך עודכן ל: <b>${input}</b>`, { parse_mode: 'HTML' });
   });
 }
