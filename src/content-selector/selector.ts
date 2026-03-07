@@ -1,9 +1,9 @@
 import { ContentMode, ContentPlatform, PlaylistItem } from '../types';
 
 const playlists: Record<ContentMode, PlaylistItem[]> = {
-  calm: require('../../data/playlists/calm.json') as PlaylistItem[],
-  funny: require('../../data/playlists/funny.json') as PlaylistItem[],
-  kids: require('../../data/playlists/kids.json') as PlaylistItem[],
+  מרגיע: require('../../data/playlists/calm.json') as PlaylistItem[],
+  מצחיק: require('../../data/playlists/funny.json') as PlaylistItem[],
+  ילדים: require('../../data/playlists/kids.json') as PlaylistItem[],
 };
 
 function pick(list: PlaylistItem[]): PlaylistItem {

@@ -1,4 +1,4 @@
-export type ContentMode = 'calm' | 'funny' | 'kids';
+export type ContentMode = 'מרגיע' | 'מצחיק' | 'ילדים';
 export type ContentPlatform = 'youtube' | 'spotify';
 
 export interface User {

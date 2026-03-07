@@ -34,6 +34,7 @@ async function main(): Promise<void> {
   // Alert pipeline
   const processor = new AlertProcessor(store, dedup, sender, config.TELEGRAM_SEND_CONCURRENCY);
   const poller = new AlertPoller(config.RED_ALERT_API_URL, config.POLL_INTERVAL_MS);
+  // const poller = new AlertPoller('https://mocki.io/v1/c4cb93ba-3d89-4d50-a061-b81d0527ff2c', config.POLL_INTERVAL_MS);
 
   poller.on('alert', (alert: NormalizedAlert) => {
     processor.process(alert).catch((err: unknown) => {

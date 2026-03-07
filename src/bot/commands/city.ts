@@ -3,7 +3,7 @@ import { IUserStore } from '../../user-store/store.interface';
 import {logger} from "../../logger";
 
 const cities: string[] = require('../../../data/cities.json') as string[];
-const citySet = new Set(cities.map((c) => c.toLowerCase().trim()));
+const citySet = new Set(cities.map(c => c.trim()));
 
 export function registerCityCommand(
   bot: { command: (cmd: string, handler: (ctx: CommandContext<Context>) => Promise<void>) => void },
@@ -24,7 +24,7 @@ export function registerCityCommand(
       const similarCities = cities.filter(city => city.includes(input))
       logger.info('found similar cities', similarCities);
       if (similarCities.length > 0) {
-        reply += '\nייתכן והתכוונתם לאחד מהבאים: ' + similarCities.join(', ') + '?';
+        reply += '\nמצאנו עבורך אזורים דומים: ' + similarCities.join(', ');
         logger.info(reply);
       }
       await ctx.reply(
@@ -40,7 +40,7 @@ export function registerCityCommand(
       return;
     }
 
-    // Remove from old city index
+    // Remove from old city index\
     if (existing.city && existing.city !== input) {
       await store.removeUserFromCity(from.id, existing.city);
     }

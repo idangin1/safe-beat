@@ -30,13 +30,17 @@ export class AlertProcessor {
 
     // Gather all users subscribed to affected cities
     const userSets = await Promise.all(
-      alert.cities.map((city) => this.store.getUsersByCity(city)),
+      alert.cities
+          .filter(city => city.length > 0)
+          .map((city) => this.store.getUsersByCity(city)),
     );
+    logger.info('userSets', JSON.stringify(userSets[0]));
 
     // Deduplicate users (same user in multiple cities)
     const usersById = new Map(
-      userSets.flat().map((u) => [u.telegramId, u]),
+      userSets.flat().map((u) => {logger.info(JSON.stringify(u)); return [u.telegramId, u]}),
     );
+      logger.info('usersById', usersById.entries());
 
     const tasks = [...usersById.values()].map((user) =>
       this.limit(async () => {
@@ -45,9 +49,12 @@ export class AlertProcessor {
         if (!userClaimed) return;
 
         const content = selectContent(user.mode, user.platform ?? 'youtube');
+        logger.info('content selected', JSON.stringify(content))
 
         const city = alert.cities.find((c) => c.includes(user.city)) ?? alert.cities[0];
+        logger.info('city', city)
         const text = formatAlertMessage(city, content.title, content.url);
+        logger.info('alert message', text)
 
         await this.sender.send(user.chatId, text, async () => {
           // Bot was blocked — soft-delete user
@@ -63,10 +70,9 @@ export class AlertProcessor {
 
 function formatAlertMessage(city: string, mediaTitle: string, mediaUrl: string): string {
   return (
-    `🚨 <b>אזעקה באזורכם</b>\n\n` +
+      `🎧 משהו שיעזור לכם לנשום בזמן האזעקה:\n` +
     `📍 מיקום: ${city}\n\n` +
     `נא להיכנס למרחב המוגן.\n\n` +
-    `🎧 משהו שיעזור לכם לנשום:\n` +
     `${mediaTitle}\n${mediaUrl}`
   );
 }

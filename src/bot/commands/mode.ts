@@ -3,9 +3,9 @@ import { ContentMode } from '../../types';
 import { IUserStore } from '../../user-store/store.interface';
 
 const modeLabels: Record<ContentMode, string> = {
-  calm: 'מרגיע',
-  funny: 'מצחיק',
-  kids: 'ילדים',
+  מרגיע: 'מרגיע',
+  מצחיק: 'מצחיק',
+  ילדים: 'ילדים',
 };
 
 export function registerModeCommand(
