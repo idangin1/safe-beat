@@ -48,7 +48,14 @@ export class AlertProcessor {
         const userClaimed = await this.dedup.claimUserAlert(alert.id, user.telegramId);
         if (!userClaimed) return;
 
-        const content = selectContent(user.mode, user.platform ?? 'youtube');
+        // Rate limit: one message per user per 120 seconds
+        const rateLimitClaimed = await this.dedup.claimRateLimit(user.telegramId, 90);
+        if (!rateLimitClaimed) {
+          logger.debug('Rate limit hit, skipping user', { userId: user.telegramId });
+          return;
+        }
+
+        const content = selectContent(user.mode ?? ['מצחיק'], user.platform ?? ['youtube']);
         logger.info('content selected', JSON.stringify(content))
 
         const city = alert.cities.find((c) => c.includes(user.city)) ?? alert.cities[0];

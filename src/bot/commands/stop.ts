@@ -1,8 +1,8 @@
-import { CommandContext, Context } from 'grammy';
+import { BotContext } from '../context';
 import { IUserStore } from '../../user-store/store.interface';
 
 export function registerStopCommand(
-  bot: { command: (cmd: string, handler: (ctx: CommandContext<Context>) => Promise<void>) => void },
+  bot: { command: (cmd: string, handler: (ctx: BotContext) => Promise<void>) => void },
   store: IUserStore,
 ): void {
   bot.command('stop', async (ctx) => {

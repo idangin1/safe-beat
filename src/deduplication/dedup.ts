@@ -23,6 +23,21 @@ export class Deduplication {
   }
 
   /**
+   * Returns true if this user has not received a message within the rate-limit window.
+   * Uses SET NX EX to atomically claim the slot.
+   */
+  async claimRateLimit(userId: number, ttlSeconds: number): Promise<boolean> {
+    const result = await this.redis.set(
+      `ratelimit:${userId}`,
+      '1',
+      'EX',
+      ttlSeconds,
+      'NX',
+    );
+    return result === 'OK';
+  }
+
+  /**
    * Returns true if this user has not yet been notified for this alert.
    */
   async claimUserAlert(alertId: string, userId: number): Promise<boolean> {

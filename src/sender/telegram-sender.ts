@@ -1,4 +1,4 @@
-import { Bot } from 'grammy';
+import { Api, Bot } from 'grammy';
 import pRetry from 'p-retry';
 import { logger } from '../logger';
 
@@ -14,7 +14,7 @@ function isTelegramError(err: unknown): err is { payload: TelegramError } & Erro
 
 export class TelegramSender {
   constructor(
-    private readonly bot: Bot,
+    private readonly bot: { api: Api },
     private readonly retryAttempts: number,
   ) {}
 

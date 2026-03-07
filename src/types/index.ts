@@ -5,8 +5,8 @@ export interface User {
   telegramId: number;
   chatId: number;
   city: string;          // normalized lowercase
-  mode: ContentMode;
-  platform: ContentPlatform;
+  mode: ContentMode[];
+  platform: ContentPlatform[];
   subscribedAt: number;
   active: boolean;
   username?: string;
