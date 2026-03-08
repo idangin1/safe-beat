@@ -1,0 +1,38 @@
+[
+  {
+    "id": "upbeat-1",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=OUaqWkVv4DM&list=RDOUaqWkVv4DM&start_radio=1",
+    "title": "קומדיה ישראלית מצחיקה"
+  },
+  {
+    "id": "upbeat-2",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=aQfI0WP-fcE&list=RDaQfI0WP-fcE&start_radio=1",
+    "title": "סטנד-אפ ישראלי"
+  },
+  {
+    "id": "upbeat-3",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/6j1OTeaV3JBLFGGpRnA67Q?si=8f8232732bd649b2",
+    "title": "שירים שמחים"
+  },
+  {
+    "id": "upbeat-4",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=CziHrYYSyPc",
+    "title": "TOY"
+  },
+  {
+    "id": "upbeat-5",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=z4q05resEvc",
+    "title": "באסה סבבה"
+  },
+  {
+    "id": "upbeat-6",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=I5rU5sC4qQE",
+    "title": "תל אביב"
+  }
+]

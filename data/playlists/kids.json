@@ -13,6 +13,18 @@
   },
   {
     "id": "kids-3",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=3B9iV1F9lY0",
+    "title": "מי שטוב לו ושמח"
+  },
+  {
+    "id": "kids-4",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=7o0m4xW0qJQ",
+    "title": "לדוד משה הייתה חווה"
+  },
+  {
+    "id": "kids-5",
     "platform": "spotify",
     "url": "https://open.spotify.com/episode/2yfSOZrn6zcUeatdLpO51l?si=6687085c32d843c5",
     "title": "מוזיקת ילדים"

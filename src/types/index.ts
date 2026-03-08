@@ -1,4 +1,4 @@
-export type ContentMode = 'מרגיע' | 'מצחיק' | 'ילדים';
+export type ContentMode = 'מרגיע' | 'מצחיק' | 'ילדים' | 'קצבי';
 export type ContentPlatform = 'youtube' | 'spotify';
 
 export interface User {
