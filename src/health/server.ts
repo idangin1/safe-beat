@@ -5,6 +5,7 @@ export function createHealthServer(port: number) {
   const app = Fastify({ logger: false });
 
   app.get('/health', async (_req, reply) => {
+    logger.info('health check status: ok')
     return reply.send({ status: 'ok' });
   });
 

@@ -39,9 +39,6 @@ export class AlertPoller extends EventEmitter {
     });
 
     const currentJson = JSON.stringify(response.data);
-    if (config.NODE_ENV === 'production') {
-      logger.info('Current data: ' + JSON.stringify(currentJson));
-    }
 
     // In-memory change detection — skip Redis entirely when quiet
     if (currentJson === this.lastResponseJson) return;
