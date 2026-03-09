@@ -1,4 +1,5 @@
 import { EventEmitter } from 'events';
+import { config } from '../config/env';
 import axios from 'axios';
 import { createHash } from 'crypto';
 import { NormalizedAlert, RawAlert } from '../types';
@@ -38,6 +39,9 @@ export class AlertPoller extends EventEmitter {
     });
 
     const currentJson = JSON.stringify(response.data);
+    if (config.NODE_ENV === 'production') {
+      logger.info('Current data: ' + JSON.stringify(currentJson));
+    }
 
     // In-memory change detection — skip Redis entirely when quiet
     if (currentJson === this.lastResponseJson) return;
