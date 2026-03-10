@@ -39,14 +39,13 @@ export class AlertMessageBuilder {
         let message = "";
 
         if (this.mediaTitle && this.mediaUrl) {
-            message += `🎧 מקווים ש-[${this.mediaTitle}](${this.mediaUrl}) יעזור לכם לנשום בזמן האזעקה\n`;
+            message += `🎧 מקווים ש-<a href="${this.mediaUrl}">${this.mediaTitle}</a> יעזור לכם לנשום בזמן האזעקה\n`;
         }
 
         message += `📍 מיקום: ${this.city}\n\n`;
 
         if (this.includeNightNoise && this.nightNoiseUrl) {
-            message += `🌙 [רעש לבן](${this.nightNoiseUrl}) )`;
-            message += `שיעזור לכם ולקטנים לישון:\n`;
+            message += `🌙 <a href="${this.nightNoiseUrl}">רעש לבן</a> שיעזור לכם ולקטנים לישון:\n`;
         }
 
         message += `נא להיכנס למרחב המוגן.`;
