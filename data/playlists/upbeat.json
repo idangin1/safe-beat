@@ -3,19 +3,19 @@
     "id": "upbeat-1",
     "platform": "youtube",
     "url": "https://www.youtube.com/watch?v=OUaqWkVv4DM&list=RDOUaqWkVv4DM&start_radio=1",
-    "title": "קומדיה ישראלית מצחיקה"
+    "title": "טניה"
   },
   {
     "id": "upbeat-2",
     "platform": "youtube",
     "url": "https://www.youtube.com/watch?v=aQfI0WP-fcE&list=RDaQfI0WP-fcE&start_radio=1",
-    "title": "סטנד-אפ ישראלי"
+    "title": "או לה פופה"
   },
   {
     "id": "upbeat-3",
     "platform": "spotify",
     "url": "https://open.spotify.com/track/6j1OTeaV3JBLFGGpRnA67Q?si=8f8232732bd649b2",
-    "title": "שירים שמחים"
+    "title": "שדות של תירוצים"
   },
   {
     "id": "upbeat-4",
@@ -26,13 +26,73 @@
   {
     "id": "upbeat-5",
     "platform": "youtube",
-    "url": "https://www.youtube.com/watch?v=z4q05resEvc",
+    "url": "https://www.youtube.com/watch?v=jV1sjm9Lz_Q&list=RDjV1sjm9Lz_Q&start_radio=1",
     "title": "באסה סבבה"
   },
   {
     "id": "upbeat-6",
     "platform": "youtube",
-    "url": "https://www.youtube.com/watch?v=I5rU5sC4qQE",
-    "title": "תל אביב"
+    "url": "https://www.youtube.com/watch?v=rgSvk335zis&list=RDrgSvk335zis&start_radio=1",
+    "title": "תמיד אוהב אותי"
+  },
+  {
+    "id": "upbeat-7",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ekr2nIex040&list=RDekr2nIex040&start_radio=1",
+    "title": "APT"
+  },
+  {
+    "id": "upbeat-8",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/3CZdlwKHGTvfveatbfKD3q?si=a9e4af17a83d488a",
+    "title": "תמיד אוהב אותי"
+  },
+  {
+    "id": "upbeat-9",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=GmagbJ_bGZI&list=RDGmagbJ_bGZI&start_radio=1",
+    "title": "פרפרים"
+  },
+  {
+    "id": "upbeat-10",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/3FihyZ7YA7vrNiSUfWww10?si=f222660343484763",
+    "title": "באמפרים"
+  },
+  {
+    "id": "upbeat-11",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=tbNURvMcAiE&list=RDtbNURvMcAiE&start_radio=1",
+    "title": "מהפכה של שמחה"
+  },
+  {
+    "id": "upbeat-12",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=Sqi1cdBvXm4&list=PLrz7a3J_M8ltCDaLT8W6fTpsQoW-bwIGW",
+    "title": "הכי קרוב אלייך"
+  },
+  {
+    "id": "upbeat-13",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/3Bxg5fgGbPwgZDE9ag5Pb2?si=d8ba945ee50447d4",
+    "title": "נעים עכשיו"
+  },
+  {
+    "id": "upbeat-14",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ZbZSe6N_BXs&list=PLVgakZ6MigxxNhXZae5cALEW588-sMQn6",
+    "title": "Happy"
+  },
+  {
+    "id": "upbeat-15",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=PAzH-YAlFYc&list=PLVgakZ6MigxxNhXZae5cALEW588-sMQn6&index=7",
+    "title": "Cake By The Ocean"
+  },
+  {
+    "id": "upbeat-16",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3?si=c4d1b519d366400d",
+    "title": "Shape Of You"
   }
 ]

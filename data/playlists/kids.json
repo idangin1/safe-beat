@@ -26,7 +26,43 @@
   {
     "id": "kids-5",
     "platform": "spotify",
-    "url": "https://open.spotify.com/episode/2yfSOZrn6zcUeatdLpO51l?si=6687085c32d843c5",
-    "title": "מוזיקת ילדים"
+    "url": "https://open.spotify.com/track/6M5vTjhUZCq4gS1IMnTdH5?si=dfd91faa07154242",
+    "title": "אדון שוקו"
+  },
+  {
+    "id": "kids-6",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=n5illsgvqKA&list=RDzRIn7W-kXhs&index=16",
+    "title": "קרן שמש"
+  },
+  {
+    "id": "kids-7",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/1KnvP5e2HIiyhTlfqO18nP?si=1c9d56e0b2dc42f0",
+    "title": "גברת עם סלים"
+  },
+  {
+    "id": "kids-8",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/3cqQJ6JXh52sb9qiXboJRu?si=7cb177fba1014db2",
+    "title": "שעון בן חיל"
+  },
+  {
+    "id": "kids-9",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/38BP68ZRZFtrzgzd1wYr02?si=6c04657bd22f4548",
+    "title": "לדוד משה"
+  },
+  {
+    "id": "kids-10",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/6ZjlDyt3vq4PP9bV24Z3fW?si=00e035dea82e451e",
+    "title": "עודני ילד"
+  },
+  {
+    "id": "kids-11",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/5ygDXis42ncn6kYG14lEVG?si=da958de77ebf4144",
+    "title": "בייבי שארק"
   }
 ]

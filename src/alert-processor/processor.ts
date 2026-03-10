@@ -5,6 +5,7 @@ import { Deduplication } from '../deduplication/dedup';
 import { selectContent } from '../content-selector/selector';
 import { TelegramSender } from '../sender/telegram-sender';
 import { logger } from '../logger';
+import { AlertMessageBuilder } from "./AlertMessageBuilder";
 
 export class AlertProcessor {
   private readonly limit: ReturnType<typeof pLimit>;
@@ -60,10 +61,16 @@ export class AlertProcessor {
 
         const city = alert.cities.find((c) => c.includes(user.city)) ?? alert.cities[0];
         logger.info('city', city)
-        const text = formatAlertMessage(city, content.title, content.url);
-        logger.info('alert message', text)
 
-        await this.sender.send(user.chatId, text, async () => {
+          const message = AlertMessageBuilder
+              .create(city)
+              .withMedia(content.title, content.url)
+              .withNightNoiseIf(this.isNight() && user.mode.includes('ילדים'), user.platform)
+              .build();
+
+        logger.info('alert message', message)
+
+        await this.sender.send(user.chatId, message, async () => {
           // Bot was blocked — soft-delete user
           await this.store.deleteUser(user.telegramId);
         });
@@ -73,13 +80,15 @@ export class AlertProcessor {
     await Promise.allSettled(tasks);
     logger.info('Alert processed', { alertId: alert.id, recipients: usersById.size });
   }
-}
 
-function formatAlertMessage(city: string, mediaTitle: string, mediaUrl: string): string {
-  return (
-      `🎧 משהו שיעזור לכם לנשום בזמן האזעקה:\n` +
-    `📍 מיקום: ${city}\n\n` +
-    `נא להיכנס למרחב המוגן.\n\n` +
-    `${mediaTitle}\n${mediaUrl}`
-  );
+  private isNight() {
+      const formatter = new Intl.DateTimeFormat("en-US", {
+          hour: "numeric",
+          hour12: false,
+          timeZone: "Asia/Jerusalem",
+      });
+
+      const hour = Number(formatter.format(new Date()));
+      return hour >= 21 || hour < 6;
+  }
 }

@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Idan Ginat <idangin4@gmail.com> (https://github.com/idangin1/safe-beat)",
   "license": "ISC",
   "dependencies": {
     "@grammyjs/conversations": "^2.1.1",

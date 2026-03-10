@@ -16,5 +16,41 @@
     "platform": "spotify",
     "url": "https://www.youtube.com/watch?v=H1Yt0xJKDY8",
     "title": "תיק קטן"
+  },
+  {
+    "id": "funny-4",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=OUaqWkVv4DM&list=RDOUaqWkVv4DM&start_radio=1",
+    "title": "טניה"
+  },
+  {
+    "id": "funny-5",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/03UrZgTINDqvnUMbbIMhql?si=8e5f87467a574a6c",
+    "title": "Gangnam Style"
+  },
+  {
+    "id": "funny-6",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=5Cjw93PB0kA&list=RD5Cjw93PB0kA&start_radio=1",
+    "title": "דרבק"
+  },
+  {
+    "id": "funny-6",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/756GvT1kuKto4MFQPeWT0n?si=23531fdf0c2a4fa6",
+    "title": "דרבק"
+  },
+  {
+    "id": "funny-7",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=VFIGj5f8G1k&list=RDVFIGj5f8G1k&start_radio=1",
+    "title": "יאללה יא נסראללה"
+  },
+  {
+    "id": "funny-8",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=k85mRPqvMbE&list=RDk85mRPqvMbE&start_radio=1",
+    "title": "Axel"
   }
 ]

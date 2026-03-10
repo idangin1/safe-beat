@@ -3,13 +3,13 @@
     "id": "calm-1",
     "platform": "youtube",
     "url": "https://www.youtube.com/watch?v=zRIn7W-kXhs&list=RDzRIn7W-kXhs&start_radio=1",
-    "title": "מוזיקה מרגיעה לנשימה עמוקה"
+    "title": "מסע"
   },
   {
     "id": "calm-2",
     "platform": "youtube",
     "url": "https://www.youtube.com/watch?v=o5Taqq_I1Ns&list=RDo5Taqq_I1Ns&start_radio=1",
-    "title": "צלילי טבע מרגיעים"
+    "title": "As a Stone"
   },
   {
     "id": "calm-3",
@@ -20,7 +20,43 @@
   {
     "id": "calm-4",
     "platform": "youtube",
-    "url": "https://www.youtube.com/watch?v=Q7p2Rk2g6mA",
+    "url": "https://www.youtube.com/watch?v=kmW2yAYhMmM&list=RDkmW2yAYhMmM&start_radio=1",
     "title": "ממעמקים"
+  },
+  {
+    "id": "calm-5",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=5WEggKymynE&list=RD5WEggKymynE&start_radio=1",
+    "title": "יש בי אהבה"
+  },
+  {
+    "id": "calm-6",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/6DmmH8JIYRW5yvEB5BDmmd?si=ab5f05eaaaf74993",
+    "title": "מעליות"
+  },
+  {
+    "id": "calm-7",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/5qx9himItVS5oSCkTQ4X8T?si=8bbe00102349450a",
+    "title": "מסע"
+  },
+  {
+    "id": "calm-8",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/6sADtPKtORAMZP3GQhOsHv?si=0ad820bec8ae41c3",
+    "title": "סיבת הסיבות"
+  },
+  {
+    "id": "calm-9",
+    "platform": "spotify",
+    "url": "https://open.spotify.com/track/4rlaGqWwl1cM6EPERYODrw?si=f672859546ca4e75",
+    "title": "פשוטים"
+  },
+  {
+    "id": "calm-10",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=-BR3ziVDazM&list=PLjCGoHm3d-dkokIl_hZeS6PGj2EpRuWKf&index=2",
+    "title": "איך אפשר שלא"
   }
 ]

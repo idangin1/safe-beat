@@ -1,4 +1,4 @@
-import { Api, Bot } from 'grammy';
+import { Api } from 'grammy';
 import pRetry from 'p-retry';
 import { logger } from '../logger';
 
