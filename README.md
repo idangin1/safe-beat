@@ -6,6 +6,8 @@ All user-facing text is in **Hebrew**.
 
 [Live Telegram Bot](https://t.me/safe_beat_bot) - `/start` to turn it on
 
+![img.png](screenshot.png)
+
 ---
 
 ## How it works
