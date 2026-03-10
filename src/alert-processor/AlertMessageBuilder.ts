@@ -45,8 +45,8 @@ export class AlertMessageBuilder {
         message += `📍 מיקום: ${this.city}\n\n`;
 
         if (this.includeNightNoise && this.nightNoiseUrl) {
-            message += `🌙 רעש לבן שיעזור לכם ולקטנים לישון:\n`;
-            message += `${this.nightNoiseUrl}\n\n`;
+            message += `🌙 [רעש לבן](${this.nightNoiseUrl}) )`;
+            message += `שיעזור לכם ולקטנים לישון:\n`;
         }
 
         message += `נא להיכנס למרחב המוגן.`;
