@@ -38,12 +38,8 @@ export class AlertMessageBuilder {
 
         let message = "";
 
-        if (this.mediaUrl) {
-            message += `${this.mediaUrl}\n`;
-        }
-
-        if (this.mediaTitle) {
-            message += `🎧 מקווים ש-${this.mediaTitle} יעזור לכם לנשום בזמן האזעקה\n`;
+        if (this.mediaTitle && this.mediaUrl) {
+            message += `🎧 מקווים ש-[${this.mediaTitle}](${this.mediaUrl}) יעזור לכם לנשום בזמן האזעקה\n`;
         }
 
         message += `📍 מיקום: ${this.city}\n\n`;
