@@ -1,3 +1,4 @@
+![img.png](SafeBeat%20logo%20transparent.png)
 # SafeBeat 🎵
 
 A Telegram bot that sends musical content to Israelis during missile alerts (צבע אדום). When an alert fires, subscribed users receive a music link matched to their preferred mood, so they have something soothing to focus on while going to the shelter.

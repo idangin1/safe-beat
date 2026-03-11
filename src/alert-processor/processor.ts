@@ -50,7 +50,7 @@ export class AlertProcessor {
         if (!userClaimed) return;
 
         // Rate limit: one message per user per 120 seconds
-        const rateLimitClaimed = await this.dedup.claimRateLimit(user.telegramId, 90);
+        const rateLimitClaimed = await this.dedup.claimRateLimit(user.telegramId, 120);
         if (!rateLimitClaimed) {
           logger.debug('Rate limit hit, skipping user', { userId: user.telegramId });
           return;
